@@ -16,7 +16,7 @@ export default function TomRequestTable() {
                     <p className="text-gray-400 mb-10">What is the most expensive item you can request at your level?</p>
                 </div>
                 <div className="flex-1 flex justify-center">
-                    <img src="/HayDay_TinyTom.png" alt="Tiny Tom" className="w-32 h-46" />
+                    <img src={import.meta.env.BASE_URL + "HayDay_TinyTom.png"} alt="Tiny Tom" className="w-32 h-46" />
                 </div>
             </div>
             <div className="my-auto mx-auto w-[80%]">
@@ -40,8 +40,8 @@ export default function TomRequestTable() {
                                     <td className="px-2 py-2 border-b border-[#2e2e32] flex justify-center"><RankBadge rank={index + 1} /></td>
                                     <td className="px-2 py-2 text-center font-bold border-b border-[#2e2e32]">{item.name}</td>
                                     <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{item.level}</td>
-                                    <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{item.sell1} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
-                                    <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{item.sell10} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
+                                    <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{item.sell1} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-4 h-4 inline" /></td>
+                                    <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{item.sell10} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-4 h-4 inline" /></td>
                                 </tr>
                             ))}
                         </tbody>
@@ -49,7 +49,7 @@ export default function TomRequestTable() {
                 </div>
 
             <div className="flex justify-center mt-24">
-                <img src="/HayDay_Tom_sleep.png" alt="Tom Sleeping" className="w-60 h-46" />
+                <img src={import.meta.env.BASE_URL + "HayDay_Tom_sleep.png"} alt="Tom Sleeping" className="w-60 h-46" />
             </div>
 
             </div>

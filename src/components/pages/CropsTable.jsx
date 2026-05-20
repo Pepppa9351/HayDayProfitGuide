@@ -21,7 +21,7 @@ export default function CropsTable() {
           <p className="text-gray-400 mb-10">What is worth growing for profit the most?</p>
         </div>
         <div className="flex-1 flex justify-center">
-          <img src="/Crop_Crate.png" alt="Crop Crate" className="w-46 h-46" />
+          <img src={import.meta.env.BASE_URL + "Crop_Crate.png"} alt="Crop Crate" className="w-46 h-46" />
         </div>
       </div>
       <div className="my-auto mx-auto w-[80%]">
@@ -48,9 +48,9 @@ export default function CropsTable() {
                   <td className="px-2 py-2 text-center font-bold border-b border-[#2e2e32]">{crop.name}</td>
                   <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.level}</td>
                   <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.growMin} minutes</td>
-                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell1} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
-                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell10} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
-                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.cph} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell1} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-4 h-4 inline" /></td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell10} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-4 h-4 inline" /></td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.cph} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-4 h-4 inline" /></td>
                 </tr>
               ))}
             </tbody>
@@ -58,7 +58,7 @@ export default function CropsTable() {
         </div>
         
         <div className="flex justify-center mt-24">
-          <img src="/HayDay_Chicken_Haystack.png" alt="Chicken Haystack" className="w-74 h-46" />
+          <img src={import.meta.env.BASE_URL + "HayDay_Chicken_Haystack.png"} alt="Chicken Haystack" className="w-74 h-46" />
         </div>
 
       </div>
