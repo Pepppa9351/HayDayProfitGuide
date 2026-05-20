@@ -1,0 +1,19 @@
+[
+  { "name": "Apple Tree",       "type": "Tree", "level": 15,  "cost": 160, "harvestH": 16, "harvests": 4, "revenue": 514,  "netProfit": 354, "roi": 221.3, "image": "apple_tree.png" },
+  { "name": "Raspberry Bush",   "type": "Bush", "level": 19,  "cost": 220, "harvestH": 18, "harvests": 4, "revenue": 608,  "netProfit": 388, "roi": 176.4, "image": "raspberry_bush.png" },
+  { "name": "Cherry Tree",      "type": "Tree", "level": 22,  "cost": 410, "harvestH": 27, "harvests": 4, "revenue": 889,  "netProfit": 479, "roi": 116.8, "image": "cherry_tree.png" },
+  { "name": "Blackberry Bush",  "type": "Bush", "level": 26,  "cost": 530, "harvestH": 31, "harvests": 4, "revenue": 1076, "netProfit": 546, "roi": 103.0, "image": "blackberry_bush.png" },
+  { "name": "Blueberry Bush",   "type": "Bush", "level": 30,  "cost": 550, "harvestH": 34, "harvests": 4, "revenue": 1074, "netProfit": 524, "roi": 95.3,  "image": "blueberry_bush.png" },
+  { "name": "Cacao Tree",       "type": "Tree", "level": 36,  "cost": 550, "harvestH": 35, "harvests": 4, "revenue": 1123, "netProfit": 573, "roi": 104.2, "image": "cacao_tree.png" },
+  { "name": "Coffee Bush",      "type": "Bush", "level": 42,  "cost": 375, "harvestH": 24, "harvests": 4, "revenue": 842,  "netProfit": 467, "roi": 124.5, "image": "coffee_bush.png" },
+  { "name": "Olive Tree",       "type": "Tree", "level": 57,  "cost": 620, "harvestH": 24, "harvests": 4, "revenue": 1076, "netProfit": 456, "roi": 73.5,  "image": "olive_tree.png" },
+  { "name": "Lemon Tree",       "type": "Tree", "level": 66,  "cost": 670, "harvestH": 29, "harvests": 4, "revenue": 1217, "netProfit": 547, "roi": 81.6,  "image": "lemon_tree.png" },
+  { "name": "Orange Tree",      "type": "Tree", "level": 71,  "cost": 720, "harvestH": 31, "harvests": 4, "revenue": 1264, "netProfit": 544, "roi": 75.6,  "image": "orange_tree.png" },
+  { "name": "Peach Tree",       "type": "Tree", "level": 76,  "cost": 750, "harvestH": 30, "harvests": 4, "revenue": 1310, "netProfit": 560, "roi": 74.7,  "image": "peach_tree.png" },
+  { "name": "Banana Tree",      "type": "Tree", "level": 88,  "cost": 800, "harvestH": 27, "harvests": 4, "revenue": 1357, "netProfit": 557, "roi": 69.6,  "image": "banana_tree.png" },
+  { "name": "Plum Tree",        "type": "Tree", "level": 94,  "cost": 600, "harvestH": 25, "harvests": 4, "revenue": 1076, "netProfit": 476, "roi": 79.3,  "image": "plum_tree.png" },
+  { "name": "Mango Tree",       "type": "Tree", "level": 97,  "cost": 770, "harvestH": 32, "harvests": 4, "revenue": 1310, "netProfit": 540, "roi": 70.1,  "image": "mango_tree.png" },
+  { "name": "Coconut Tree",     "type": "Tree", "level": 101, "cost": 810, "harvestH": 37, "harvests": 4, "revenue": 1404, "netProfit": 594, "roi": 73.3,  "image": "coconut_tree.png" },
+  { "name": "Guava Tree",       "type": "Tree", "level": 104, "cost": 860, "harvestH": 34, "harvests": 4, "revenue": 1450, "netProfit": 590, "roi": 68.6,  "image": "guava_tree.png" },
+  { "name": "Pomegranate Tree", "type": "Tree", "level": 107, "cost": 910, "harvestH": 26, "harvests": 4, "revenue": 1450, "netProfit": 540, "roi": 59.3,  "image": "pomegranate_tree.png" }
+]
