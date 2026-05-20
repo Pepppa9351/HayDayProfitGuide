@@ -14,38 +14,54 @@ export default function CropsTable() {
 
   return (
     <div>
-    <h1 className="text-center text-3xl font-bold mb-8">Crops table</h1>
-    <div style={{ width: "80%", margin: "0 auto", borderRadius: "0.75rem", overflow: "hidden", border: "1px solid #2e2e32" }}>
-      <table className="w-full text-xs border-collapse">
-        <thead>
-          <tr>
-            <th className="px-3 py-2 text-xs font-bold whitespace-nowrap" style={{ background: "#252529", color: "#a8a8b0" }}>Rank</th>
-            <th className="px-3 py-2 text-xs font-bold whitespace-nowrap" style={{ background: "#252529", color: "#a8a8b0" }}>Crop</th>
-            <SortableHeader key="level" title="Lvl" onClick={() => handleSort('level')} />
-            <SortableHeader key="growTime" title="Grow Time" onClick={() => handleSort('growTime')} />
-            <SortableHeader key="sell1" title="Sell ×1" onClick={() => handleSort('sell1')} />
-            <SortableHeader key="sell10" title="Sell ×10" onClick={() => handleSort('sell10')} />
-            <SortableHeader key="cph" title="Coins/Hour" onClick={() => handleSort('cph')} />
-          </tr>
-        </thead>
+      <div className="flex items-center">
+        <div className="flex-1" />
+        <div className="flex-1 text-center">
+          <h1 className="text-3xl font-bold mb-2">Crops table</h1>
+          <p className="text-gray-400 mb-10">What is worth growing for profit the most?</p>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <img src="/Crop_Crate.png" alt="Crop Crate" className="w-46 h-46" />
+        </div>
+      </div>
+      <div className="my-auto mx-auto w-[80%]">
+        <p className="ml-6 italic mb-2">*Click on any column header to sort that column*</p>
+        <div className="rounded-xl overflow-hidden border border-[#2e2e32]">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr>
+                <th className="px-3 py-2 text-xs font-bold whitespace-nowrap bg-[#252529] text-[#a8a8b0]">Rank</th>
+                <th className="px-3 py-2 text-xs font-bold whitespace-nowrap bg-[#252529] text-[#a8a8b0]">Crop</th>
+                <SortableHeader key="level" title="Lvl" onClick={() => handleSort('level')} />
+                <SortableHeader key="growTime" title="Grow Time" onClick={() => handleSort('growMin')} />
+                <SortableHeader key="sell1" title="Sell ×1" onClick={() => handleSort('sell1')} />
+                <SortableHeader key="sell10" title="Sell ×10" onClick={() => handleSort('sell10')} />
+                <SortableHeader key="cph" title="Coins/Hour" onClick={() => handleSort('cph')} />
+              </tr>
+            </thead>
+            <tbody>
+              {sorted.map((crop, index) => (
+                <tr key={crop.name} style={{ background: index % 2 === 0 ? "#1a1b1e" : "#1e1f23", color: "#e3e3e8" }}
+                  onMouseEnter={e => e.currentTarget.style.background = "#25262b"}
+                  onMouseLeave={e => e.currentTarget.style.background = index % 2 === 0 ? "#1a1b1e" : "#1e1f23"}>
+                  <td className="px-2 py-2 border-b border-[#2e2e32] flex justify-center"><RankBadge rank={index + 1} /></td>
+                  <td className="px-2 py-2 text-center font-bold border-b border-[#2e2e32]">{crop.name}</td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.level}</td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.growMin} minutes</td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell1} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.sell10} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
+                  <td className="px-2 py-2 text-center border-b border-[#2e2e32]">{crop.cph} <img src="/gold-coin.png" alt="Coin" className="w-4 h-4 inline" /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        
+        <div className="flex justify-center mt-24">
+          <img src="/HayDay_Chicken_Haystack.png" alt="Chicken Haystack" className="w-74 h-46" />
+        </div>
 
-        <tbody>
-          {sorted.map((crop, index) => (
-            <tr key={crop.name} style={{ background: index % 2 === 0 ? "#1a1b1e" : "#1e1f23", color: "#e3e3e8" }}
-              onMouseEnter={e => e.currentTarget.style.background = "#25262b"}
-              onMouseLeave={e => e.currentTarget.style.background = index % 2 === 0 ? "#1a1b1e" : "#1e1f23"}>
-              <td className="px-2 py-2" style={{ borderBottom: "1px solid #2e2e32", display: "flex", justifyContent: "center" }}><RankBadge rank={index + 1} /></td>
-              <td className="px-2 py-2 text-center font-bold" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.name}</td>
-              <td className="px-2 py-2 text-center" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.level}</td>
-              <td className="px-2 py-2 text-center" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.growMin}</td>
-              <td className="px-2 py-2 text-center" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.sell1}</td>
-              <td className="px-2 py-2 text-center" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.sell10}</td>
-              <td className="px-2 py-2 text-center" style={{ borderBottom: "1px solid #2e2e32" }}>{crop.cph}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+      </div>
     </div>
   )
 }

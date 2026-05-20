@@ -1,7 +1,9 @@
 import CropsTable from './components/pages/CropsTable'
 import Home from './components/pages/Home'
 import PlantsTable from './components/pages/PlantsTable'
+import TomRequestTable from './components/pages/TomRequestTable'
 import Navbar from './components/ui/Navbar'
+import Legal from './components/pages/Legal'
 import { useState } from 'react'
 
 export default function App() {
@@ -14,7 +16,8 @@ export default function App() {
         {page === 'home' && <Home setPage={setPage} />}
         {page === 'crops' && <CropsTable />}
         {page === 'plants' && <PlantsTable />}
-        {page === 'production' && <div>Production</div>}
+        {page === 'tom' && <TomRequestTable />}
+        {page === 'legal' && <Legal />}
       </main>
     </div>
   )

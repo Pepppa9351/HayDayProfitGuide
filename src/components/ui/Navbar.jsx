@@ -11,23 +11,27 @@ export default function Navbar( { page, setPage } ) {
   }
 
   return (
-    <nav className="min-h-screen flex flex-col" style={{ width: "260px", flexShrink: 0, background: "#161618", borderRight: "1px solid #2e2e32" }}>
+    <nav className="h-screen sticky top-0 flex flex-col w-[260px] shrink-0 bg-[#161618] border-r border-[#2e2e32]">
 
       {/* Logo */}
-      <div className="flex flex-col items-center gap-1 px-4 cursor-pointer" style={{ paddingTop: "1.5rem", paddingBottom: "2rem" }} onClick={()=>(setPage("home"))}>
-          <img src="/HayDay_Logo.png" alt="HayDay Guide" style={{ width: "6.5rem", height: "5rem" }} />
-          <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#fbe12f", fontFamily: "'Fredoka', sans-serif" }}>Guide Book</span>
+      <div className="flex flex-col items-center gap-1 px-4 pt-6 pb-8 cursor-pointer" onClick={() => setPage("home")}>
+        <img src="/HayDay_Logo.png" alt="HayDay Guide" className="w-[6.5rem] h-20" />
+        <span className="text-xs font-bold tracking-widest uppercase text-[#fbe12f]" style={{ fontFamily: "'Fredoka', sans-serif" }}>Profit Guide</span>
       </div>
 
       {/* Divider */}
-      <div className="mx-4 my-1 h-px" style={{ background: "#2e2e32" }} />
+      <div className="mx-4 my-1 h-px bg-[#2e2e32]" />
 
       {/* Links */}
       <div className="flex flex-col gap-1 px-3 pt-8">
         <button className={linkClass} style={{ ...linkStyle, ...(page === 'home' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('home')} onClick={() => setPage('home')}>Home</button>
         <button className={linkClass} style={{ ...linkStyle, ...(page === 'crops' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('crops')} onClick={() => setPage('crops')}>Crops</button>
         <button className={linkClass} style={{ ...linkStyle, ...(page === 'plants' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('plants')} onClick={() => setPage('plants')}>Trees & Bushes</button>
-        <button className={linkClass} style={{ ...linkStyle, ...(page === 'production' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('production')} onClick={() => setPage('production')}>Production</button>
+        <button className={linkClass} style={{ ...linkStyle, ...(page === 'tom' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('tom')} onClick={() => setPage('tom')}>Tom Request Sheet</button>
+      </div>
+
+      <div className="flex flex-col mt-auto px-3 pb-8">
+        <button className={linkClass} style={{ ...linkStyle, ...(page === 'legal' ? { background: "rgba(255,255,255,0.08)", color: "#e3e3e8" } : {}) }} onMouseEnter={onEnter} onMouseLeave={onLeave('legal')} onClick={() => setPage('legal')}>Legal Information</button>
       </div>
     </nav>
   )
