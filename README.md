@@ -1,16 +1,67 @@
-# React + Vite
+# HayDay Profit Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fan-made reference guide for the mobile game **Hay Day**, focused on helping players maximize their in-game coin profit. The app provides sortable data tables for crops, trees & bushes, and Tom's requests so you can quickly figure out what's worth growing, planting, or requesting.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Crops Table** — compare all crops by sell price (×1 and ×10) and coins per hour, sorted by best profit rate by default
+- **Trees & Bushes Table** — compare plants by cost, harvest time, revenue, net profit, and ROI %
+- **Tom Request Sheet** — see all items Tom can request, sorted by sell value so you always know the most profitable request at your level
+- Sortable columns on every table — click any header to re-sort
+- Rank badges highlighting the top performers
+- Dark-themed UI with hover effects
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Technology |
+|---|---|
+| Framework | [React 19](https://react.dev/) |
+| Build tool | [Vite 8](https://vitejs.dev/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/) |
+| Language | JavaScript (ESM) |
+| Linting | ESLint 9 |
+| Data | Local JSON files |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server with HMR |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── pages/
+│   │   ├── Home.jsx            # Landing page with navigation bubbles
+│   │   ├── CropsTable.jsx      # Crops profit table
+│   │   ├── PlantsTable.jsx     # Trees & bushes profit table
+│   │   ├── TomRequestTable.jsx # Tom's request value table
+│   │   └── Legal.jsx
+│   └── ui/
+│       ├── Navbar.jsx
+│       ├── SortableHeader.jsx
+│       ├── RankBadge.jsx
+│       └── RefBubble.jsx
+└── data/
+    ├── Crops.json
+    ├── Plants.json
+    └── Tom.json
+```
+
+---
+
+*This is an unofficial fan project and is not affiliated with Supercell or the Hay Day brand.*
