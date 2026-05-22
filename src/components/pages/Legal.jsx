@@ -1,7 +1,7 @@
 export default function Legal() {
     return (
-        <div className="mx-auto w-[80%] mt-8">
-            <h1 className="text-2xl font-bold mb-6">Legal Information & Credits</h1>
+        <div className="mx-auto w-[95%] sm:w-[80%] mt-8 px-2 sm:px-0">
+            <h1 className="text-xl sm:text-2xl font-bold mb-6">Legal Information & Credits</h1>
 
             <div className="mb-8">
                 <h2 className="text-lg font-semibold mb-2 text-[#a8a8b0]">Disclaimer</h2>
@@ -10,7 +10,7 @@ export default function Legal() {
 
             <div className="mb-8">
                 <h2 className="text-lg font-semibold mb-2 text-[#a8a8b0]">Assets</h2>
-                <p className="text-gray-400">Game images and assets used in this project are sourced from the official Supercell Fan Kit, available at <span className="text-white">fankit.supercell.com</span>. All assets remain the property of Supercell and are used in accordance with their fan content guidelines.</p>
+                <p className="text-gray-400">Game images and assets used in this project are sourced from the official Supercell Fan Kit, available at fankit.supercell.com. All assets remain the property of Supercell and are used in accordance with their fan content guidelines.</p>
             </div>
 
             <div className="mb-8">

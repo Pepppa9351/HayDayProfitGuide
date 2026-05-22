@@ -11,11 +11,11 @@ export default function Navbar( { page, setPage, navOpen, setNavOpen } ) {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 h-screen z-40 overflow-hidden transition-all duration-300 ${navOpen ? 'w-full xl:w-[320px]' : 'w-0'}`}>
-      <div className="w-[80vw] xl:w-[320px] h-full flex flex-col bg-[#161618] border-r border-[#2e2e32]">
+    <nav className={`fixed top-0 left-0 h-[100dvh] z-40 overflow-hidden transition-all duration-300 ${navOpen ? 'w-full xl:w-[320px]' : 'w-0'}`}>
+      <div className="w-[80vw] xl:w-[320px] h-[100dvh] flex flex-col bg-[#161618] border-r border-[#2e2e32]">
 
       {/* Logo */}
-      <div className="flex flex-col items-center gap-1 px-4 pt-16 pb-8 cursor-pointer" onClick={() => setPage("home")}>
+      <div className="flex flex-col items-center gap-1 px-4 pt-16 pb-8 cursor-pointer" onClick={() => { setPage("home"); setNavOpen(false); }}>
         <img src={import.meta.env.BASE_URL + "HayDay_Logo.png"} alt="HayDay Guide" className="w-[6.5rem] h-20" />
         <span className="text-xs font-bold tracking-widest uppercase text-[#fbe12f]" style={{ fontFamily: "'Fredoka', sans-serif" }}>Profit Guide</span>
       </div>

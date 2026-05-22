@@ -10,13 +10,13 @@ export default function PlantsTable() {
   return (
     <div>
       <div className="flex items-center">
-        <div className="flex-1" />
+        <div className="hidden xl:block flex-1" />
         <div className="flex-1 text-center">
           <h1 className="text-lg xl:text-3xl font-bold mb-2 mt-8">Trees & Bushes table</h1>
           <p className="text-xs xl:text-base text-gray-400 mb-4 xl:mb-10">What is worth planting for the most profit?</p>
         </div>
-        <div className="flex-1 flex justify-center">
-          <img src={import.meta.env.BASE_URL + "HayDay_Raspberry.png"} alt="Raspberry" className="hidden xl:block w-46 h-46" />
+        <div className="hidden xl:flex flex-1 justify-center">
+          <img src={import.meta.env.BASE_URL + "HayDay_Raspberry.png"} alt="Raspberry" className="w-46 h-46" />
         </div>
       </div>
       <div className="my-auto mx-auto w-full xl:w-[80%]">
