@@ -14,7 +14,7 @@ export default function CropsTable() {
 
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center mt-10">
         <div className="flex-1"/>
         <div className="flex-1 text-center">
           <h1 className="text-lg xl:text-3xl font-bold mb-2">Crops table</h1>
@@ -58,7 +58,7 @@ export default function CropsTable() {
         </div>
         
         <div className="flex justify-center mt-24">
-          <img src={import.meta.env.BASE_URL + "HayDay_Chicken_Haystack.png"} alt="Chicken Haystack" className="w-74 h-46" />
+          <img src={import.meta.env.BASE_URL + "HayDay_Chicken_Haystack.png"} alt="Chicken Haystack" className="w-57 h-32 xl:w-74 xl:h-46" />
         </div>
 
       </div>

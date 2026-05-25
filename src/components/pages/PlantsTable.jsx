@@ -57,7 +57,7 @@ export default function PlantsTable() {
         </div>
               
         <div className="flex justify-center mt-24">
-          <img src={import.meta.env.BASE_URL + "HayDay_SignChick.png"} alt="Sign Chick" className="w-46 46" />
+          <img src={import.meta.env.BASE_URL + "HayDay_SignChick.png"} alt="Sign Chick" className="w-31 h-31 xl:w-46 xl:h-46" />
         </div>
 
       </div>
