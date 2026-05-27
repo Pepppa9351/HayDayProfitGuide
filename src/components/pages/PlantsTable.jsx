@@ -16,7 +16,7 @@ export default function PlantsTable() {
           <p className="text-xs xl:text-base text-gray-400 mb-4 xl:mb-10">What is worth planting for the most profit?</p>
         </div>
         <div className="hidden xl:flex flex-1 justify-center">
-          <img src={import.meta.env.BASE_URL + "HayDay_Raspberry.png"} alt="Raspberry" className="w-46 h-46" />
+          <img src={import.meta.env.BASE_URL + "HayDay_Raspberry.webp"} alt="Raspberry" className="w-46 h-46" />
         </div>
       </div>
       <div className="my-auto mx-auto w-full xl:w-[80%]">
@@ -45,10 +45,10 @@ export default function PlantsTable() {
                   <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center font-bold border-b border-[#2e2e32]">{plant.name}</td>
                   <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.type}</td>
                   <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.level}</td>
-                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.cost} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
+                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.cost} <img src={import.meta.env.BASE_URL + "gold-coin.webp"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
                   <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.harvestH} hours</td>
-                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.revenue} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
-                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.netProfit} <img src={import.meta.env.BASE_URL + "gold-coin.png"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
+                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.revenue} <img src={import.meta.env.BASE_URL + "gold-coin.webp"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
+                  <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.netProfit} <img src={import.meta.env.BASE_URL + "gold-coin.webp"} alt="Coin" className="w-3 h-3 md:w-4 md:h-4 inline" /></td>
                   <td className="px-0.5 py-0.5 md:px-1 md:py-1 xl:px-2 xl:py-2 text-center border-b border-[#2e2e32]">{plant.roi}%</td>
                 </tr>
               ))}
@@ -57,7 +57,7 @@ export default function PlantsTable() {
         </div>
               
         <div className="flex justify-center mt-24">
-          <img src={import.meta.env.BASE_URL + "HayDay_SignChick.png"} alt="Sign Chick" className="w-31 h-31 xl:w-46 xl:h-46" />
+          <img src={import.meta.env.BASE_URL + "HayDay_SignChick.webp"} alt="Sign Chick" className="w-31 h-31 xl:w-46 xl:h-46" />
         </div>
 
       </div>

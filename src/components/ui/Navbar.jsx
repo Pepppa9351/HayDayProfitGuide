@@ -16,7 +16,7 @@ export default function Navbar( { page, setPage, navOpen, setNavOpen } ) {
 
       {/* Logo */}
       <div className="flex flex-col items-center gap-1 px-4 pt-16 pb-8 cursor-pointer" onClick={() => { setPage("home"); setNavOpen(false); }}>
-        <img src={import.meta.env.BASE_URL + "HayDay_Logo.png"} alt="HayDay Guide" className="w-[6.5rem] h-20" />
+        <img src={import.meta.env.BASE_URL + "HayDay_Logo.webp"} alt="HayDay Guide" className="w-[6.5rem] h-20" />
         <span className="text-xs font-bold tracking-widest uppercase text-[#fbe12f]" style={{ fontFamily: "'Fredoka', sans-serif" }}>Profit Guide</span>
       </div>
 

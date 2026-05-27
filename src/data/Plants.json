@@ -9,7 +9,7 @@
     "revenue": 514,
     "netProfit": 354,
     "roi": 221.2,
-    "image": "apple_tree.png"
+    "image": "apple_tree.webp"
   },
   {
     "name": "Raspberry Bush",
@@ -21,7 +21,7 @@
     "revenue": 608,
     "netProfit": 388,
     "roi": 176.4,
-    "image": "raspberry_bush.png"
+    "image": "raspberry_bush.webp"
   },
   {
     "name": "Cherry Tree",
@@ -33,7 +33,7 @@
     "revenue": 889,
     "netProfit": 479,
     "roi": 116.8,
-    "image": "cherry_tree.png"
+    "image": "cherry_tree.webp"
   },
   {
     "name": "Blackberry Bush",
@@ -45,7 +45,7 @@
     "revenue": 1076,
     "netProfit": 546,
     "roi": 103.0,
-    "image": "blackberry_bush.png"
+    "image": "blackberry_bush.webp"
   },
   {
     "name": "Blueberry Bush",
@@ -57,7 +57,7 @@
     "revenue": 1074,
     "netProfit": 524,
     "roi": 95.3,
-    "image": "blueberry_bush.png"
+    "image": "blueberry_bush.webp"
   },
   {
     "name": "Cacao Tree",
@@ -69,7 +69,7 @@
     "revenue": 1123,
     "netProfit": 573,
     "roi": 104.2,
-    "image": "cacao_tree.png"
+    "image": "cacao_tree.webp"
   },
   {
     "name": "Coffee Bush",
@@ -81,7 +81,7 @@
     "revenue": 842,
     "netProfit": 467,
     "roi": 124.5,
-    "image": "coffee_bush.png"
+    "image": "coffee_bush.webp"
   },
   {
     "name": "Olive Tree",
@@ -93,7 +93,7 @@
     "revenue": 1076,
     "netProfit": 456,
     "roi": 73.5,
-    "image": "olive_tree.png"
+    "image": "olive_tree.webp"
   },
   {
     "name": "Lemon Tree",
@@ -105,7 +105,7 @@
     "revenue": 1216,
     "netProfit": 546,
     "roi": 81.5,
-    "image": "lemon_tree.png"
+    "image": "lemon_tree.webp"
   },
   {
     "name": "Orange Tree",
@@ -117,7 +117,7 @@
     "revenue": 1264,
     "netProfit": 544,
     "roi": 75.6,
-    "image": "orange_tree.png"
+    "image": "orange_tree.webp"
   },
   {
     "name": "Peach Tree",
@@ -129,7 +129,7 @@
     "revenue": 1310,
     "netProfit": 560,
     "roi": 74.7,
-    "image": "peach_tree.png"
+    "image": "peach_tree.webp"
   },
   {
     "name": "Banana Tree",
@@ -141,7 +141,7 @@
     "revenue": 1357,
     "netProfit": 557,
     "roi": 69.6,
-    "image": "banana_tree.png"
+    "image": "banana_tree.webp"
   },
   {
     "name": "Plum Tree",
@@ -153,7 +153,7 @@
     "revenue": 1076,
     "netProfit": 476,
     "roi": 79.3,
-    "image": "plum_tree.png"
+    "image": "plum_tree.webp"
   },
   {
     "name": "Mango Tree",
@@ -165,7 +165,7 @@
     "revenue": 1310,
     "netProfit": 540,
     "roi": 70.1,
-    "image": "mango_tree.png"
+    "image": "mango_tree.webp"
   },
   {
     "name": "Coconut Tree",
@@ -177,7 +177,7 @@
     "revenue": 1404,
     "netProfit": 594,
     "roi": 73.3,
-    "image": "coconut_tree.png"
+    "image": "coconut_tree.webp"
   },
   {
     "name": "Guava Tree",
@@ -189,7 +189,7 @@
     "revenue": 1450,
     "netProfit": 590,
     "roi": 68.6,
-    "image": "guava_tree.png"
+    "image": "guava_tree.webp"
   },
   {
     "name": "Pomegranate Tree",
@@ -201,6 +201,6 @@
     "revenue": 1450,
     "netProfit": 540,
     "roi": 59.3,
-    "image": "pomegranate_tree.png"
+    "image": "pomegranate_tree.webp"
   }
 ]
